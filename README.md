@@ -26,10 +26,10 @@ cd annotated-container-doctrine-demo && composer install
 Before you can start using the tool you should make sure the database and schema are created. This is accomplished by 
 using Doctrine's schema migration tool. Execute the following commands from your repo's root:
 
-``shell
+```shell
 ./bin/doctrine orm:schema-tool:create
 PROFILES=default,prod ./bin/doctrine orm:schema-tool:create
-``
+```
 
 By default, if you don't provide any profiles this tool will assume that `default` and `dev` are the active profiles. 
 The first command creates the "dev" database and the second command creates the "prod" database. To confirm this make 
