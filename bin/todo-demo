@@ -7,11 +7,12 @@ use Cspray\AnnotatedContainer\Bootstrap;
 use Cspray\AnnotatedContainer\CsvActiveProfilesParser;
 use Cspray\AnnotatedContainerDoctrineDemo\Console\Application;
 use Cspray\AnnotatedContainerDoctrineDemo\Console\ApplicationCommandListener;
-use Cspray\AnnotatedContainerDoctrineDemo\Entity\Todo;
-use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Tools\Console\ConsoleRunner;
-use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
 use function Cspray\AnnotatedContainer\eventEmitter;
+
+if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
+    echo 'ERROR! Please ensure you run composer install first!', PHP_EOL;
+    exit(1);
+}
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
