@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ab86e1e5976fa231ec0b56070d1a59",
+    "content-hash": "9df397f4953fcc663acd4004f7256ab1",
     "packages": [
         {
             "name": "brick/math",
@@ -117,12 +117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cspray/annotated-container.git",
-                "reference": "f6ca102fd72be83afd49660064ef053c318c76ec"
+                "reference": "b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cspray/annotated-container/zipball/f6ca102fd72be83afd49660064ef053c318c76ec",
-                "reference": "f6ca102fd72be83afd49660064ef053c318c76ec",
+                "url": "https://api.github.com/repos/cspray/annotated-container/zipball/b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1",
+                "reference": "b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1",
                 "shasum": ""
             },
             "require": {
@@ -186,7 +186,7 @@
                 "issues": "https://github.com/cspray/annotated-container/issues",
                 "source": "https://github.com/cspray/annotated-container/tree/main"
             },
-            "time": "2022-08-11T15:53:17+00:00"
+            "time": "2022-08-11T21:06:11+00:00"
         },
         {
             "name": "cspray/annotated-target",
@@ -3044,7 +3044,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "ext-sqlite3": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
