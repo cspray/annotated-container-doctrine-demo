@@ -1,0 +1,20 @@
+{
+  "name": "cspray/annotated-container-doctrine-demo",
+  "description": "A demo app using Annotated Container and Doctrine.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "ext-sqlite": "*",
+    "cspray/annotated-container": "dev-main",
+    "php-di/php-di": "v7.x-dev",
+    "doctrine/orm": "^2.13",
+    "ramsey/uuid-doctrine": "^1.8",
+    "symfony/cache": "^6.1",
+    "symfony/console": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cspray\\AnnotatedContainerDoctrineDemo\\": "src"
+    }
+  }
+}

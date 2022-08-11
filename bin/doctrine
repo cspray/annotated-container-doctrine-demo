@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+namespace Cspray\AnnotatedContainerDoctrineDemo;
+
+use Cspray\AnnotatedContainer\Bootstrap;
+use Cspray\AnnotatedContainer\CsvActiveProfilesParser;
+use Cspray\AnnotatedContainerDoctrineDemo\Entity\Todo;
+use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+$profiles = (string) getenv('PROFILES');
+if ($profiles === '') {
+    $profiles = 'default,dev';
+}
+
+$activeProfilesParser = new CsvActiveProfilesParser();
+$container = (new Bootstrap())->bootstrapContainer($activeProfilesParser->parse($profiles));
+
+ConsoleRunner::run(new SingleManagerProvider($container->get(EntityManagerInterface::class)));
