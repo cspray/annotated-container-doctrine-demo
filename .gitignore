@@ -1,4 +1,6 @@
+.annotated-container-cache/
 /data/logs/annotated-container.log
 /data/dev.sqlite
+/data/test.sqlite
 /data/prod.sqlite
 vendor/

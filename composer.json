@@ -5,7 +5,7 @@
   "require": {
     "php": "^8.1",
     "ext-sqlite3": "*",
-    "cspray/annotated-container": "dev-main",
+    "cspray/annotated-container": "^1.5",
     "php-di/php-di": "v7.x-dev",
     "doctrine/orm": "^2.13",
     "ramsey/uuid-doctrine": "^1.8",

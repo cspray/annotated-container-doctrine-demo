@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9df397f4953fcc663acd4004f7256ab1",
+    "content-hash": "e3f32c9e60650ccfc4f91c4b815fa89c",
     "packages": [
         {
             "name": "brick/math",
@@ -113,16 +113,16 @@
         },
         {
             "name": "cspray/annotated-container",
-            "version": "dev-main",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cspray/annotated-container.git",
-                "reference": "b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1"
+                "reference": "50334fe067ca44f374f05a6e74a49464df0e431b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cspray/annotated-container/zipball/b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1",
-                "reference": "b32ea12a1b533fce96c5505b05ae5dfde0d0dfc1",
+                "url": "https://api.github.com/repos/cspray/annotated-container/zipball/50334fe067ca44f374f05a6e74a49464df0e431b",
+                "reference": "50334fe067ca44f374f05a6e74a49464df0e431b",
                 "shasum": ""
             },
             "require": {
@@ -149,7 +149,6 @@
                 "php-di/php-di": "Install v7.x-dev to use the DI\\Container as the backing container.",
                 "rdlowrey/auryn": "Install to use the Auryn\\Injector as the backing container."
             },
-            "default-branch": true,
             "bin": [
                 "bin/annotated-container"
             ],
@@ -184,22 +183,22 @@
             ],
             "support": {
                 "issues": "https://github.com/cspray/annotated-container/issues",
-                "source": "https://github.com/cspray/annotated-container/tree/main"
+                "source": "https://github.com/cspray/annotated-container/tree/v1.5.0"
             },
-            "time": "2022-08-11T21:06:11+00:00"
+            "time": "2022-08-13T00:37:48+00:00"
         },
         {
             "name": "cspray/annotated-target",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cspray/annotated-target.git",
-                "reference": "190be08f71bfcfceec7af3a7ca9860962ab9bc5f"
+                "reference": "8d1a59725df30a43f27bbdb973c0f714a8eb44f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cspray/annotated-target/zipball/190be08f71bfcfceec7af3a7ca9860962ab9bc5f",
-                "reference": "190be08f71bfcfceec7af3a7ca9860962ab9bc5f",
+                "url": "https://api.github.com/repos/cspray/annotated-target/zipball/8d1a59725df30a43f27bbdb973c0f714a8eb44f5",
+                "reference": "8d1a59725df30a43f27bbdb973c0f714a8eb44f5",
                 "shasum": ""
             },
             "require": {
@@ -234,9 +233,9 @@
             "description": "A PHP 8 library for statically parsing Attributes using PHP-Parser.",
             "support": {
                 "issues": "https://github.com/cspray/annotated-target/issues",
-                "source": "https://github.com/cspray/annotated-target/tree/v0.2.0"
+                "source": "https://github.com/cspray/annotated-target/tree/v0.2.1"
             },
-            "time": "2022-08-11T13:27:59+00:00"
+            "time": "2022-08-12T14:01:47+00:00"
         },
         {
             "name": "cspray/architectural-decision",
@@ -3038,7 +3037,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "cspray/annotated-container": 20,
         "php-di/php-di": 20
     },
     "prefer-stable": false,
